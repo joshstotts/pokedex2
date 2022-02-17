@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Pokemon</title>
+<style>
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+    body {
+        background-color: rgba(255,0,0,0.5);
+    }
+    h1, button {
+        margin: 10px 20px;
+    }  
+    button {
+        margin: 20px 20px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px auto;
+    }
+</style>
+
+</head>
+<body>
+
+<nav>
+    <h1>Edit Pokemon</h1>
+    <a href='/pokemon'><button>Back</button></a>
+</nav>
+
+            <form action='/pokemon/<%= index %>?_method=PUT' method='POST'>
+                
+                <input type='text' name='name'  value='<%= data.name %>' />
+
+                <input type='text' name='type'  value='<%= data.type %>' /><br />
+
+                <input type='text' name='hp'  value='<%= data.stats.hp %>' />
+
+                <input type='text' name='speed'  value='<%= data.stats.speed %>' /><br />
+
+                <input type='text' name='attack'  value='<%= data.stats.attack %>' />
+
+                <input type='text' name='spattack'  value='<%= data.stats.spattack %>' /><br />
+
+                <input type='text' name='defense'  value='<%= data.stats.defense %>' />
+
+                <input type='text' name='spdefense'  value='<%= data.stats.spdefense %>' /><br />
+
+                <input type='submit' value='submit' />
+                
+            </form>
+
+</body>
+</html>

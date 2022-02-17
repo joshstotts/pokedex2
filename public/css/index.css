@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+   
+}
+
+h1 {
+    margin-left: 100px;
+}
+
+body {
+    /* background-color: rgba(255,0,0,0.5); */
+    background-image: url('https://images.alphacoders.com/201/201831.png');
+    background-image: cover;
+}
+
+li {
+    display: inline-grid;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+button {
+    margin: 20px 20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    
+}

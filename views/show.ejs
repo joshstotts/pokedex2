@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css">
+    <title>Pokedex Index Page</title>
+</head>
+<body>
+    
+    <nav>
+        <a href='/pokemon'><button>All Pokemon</button></a>
+    </nav> 
+<div id=info>
+   <h1><%= data.name %> (<%= data.type %>)</h1>
+   <div>
+        <p><b>HP:</b><%= data.stats.hp %> <br /><br />
+        <b>SPEED:</b><%= data.stats.speed %> <br /><br />
+        <b>ATTACK:</b><%= data.stats.attack %> <br /><br />
+        <b>SPECIAL ATTACK:</b><%= data.stats.spattack %> <br /><br />
+        <b>DEFENSE:</b><%= data.stats.defense %> <br /><br />
+        <b>SPECIAL DEFENSE:</b><%= data.stats.spdefense %></p>    
+   </div>
+</div>
+
+   
+</body>
+</html>
